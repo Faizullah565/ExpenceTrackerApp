@@ -1,0 +1,70 @@
+.list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .list li.plus {
+    border-right: 5px solid #b6960a;
+  }
+  
+  .list li.plus:hover {
+    border-right: 5px solid #b6960a;
+    background-color: #b6960a;
+    color: #f7f7f7
+  }
+  
+  .list li.minus {
+    border-right: 5px solid #2da3ad;
+  }
+  
+  .list li.minus:hover {
+    border-right: 5px solid #2da3ad;
+    background-color: #2da3ad;
+    color: #f7f7f7
+  }
+
+  .delete-btn {
+    cursor: pointer;
+    background-color: #8a6a66;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .edit-btn{
+    cursor: pointer;
+    background-color: #8a6a66;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    /* left: 0; */
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    right: -85px;
+  }
+  
+  li:hover .edit-btn {
+    opacity: 1;
+  }
+  li:hover .delete-btn {
+    opacity: 1;
+  }
